@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  
+  html,
+  body {
+    margin: 0;
+    color:white;
+    background: #171717;
+   
+    @apply dark:bg-trueGray-900;
+    
+  }
+  h1,p,h2{
+    color: #fff;
+  }
+  #vciso{
+    
+    color: var(--White, #fff);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100px;
+    letter-spacing: 4.8px;
+    padding-left:20px;
+    
+  }
+  #pgraph{
+    font-size:24px;
+    font-family: __Lato_71b47d,__Lato_Fallback_71b47d;
+  }
+  #portfolioheading{
+    font-size: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    #quoteimg{
+      display: none;
+    }
+    #pgraph{
+      margin-left:5px;
+    }
+    #getquotebutton{
+    margin-left: 20px;}
+    #herologo{
+      display: none;
+    }
+    
+    #herocontainer{
+      
+     
+      
+     
+    }
+   
+  }
+  @media only screen and (min-width: 600px){
+    .bestSecurityHeader {
+      font-size: 20px;
+          }
+    #herologo{
+      display: flex;
+    
+     
+      
+    }
+    #herocontainer{
+     
+     
+    }
+  }
+  #herologo{
+    position: static;
+    height: 300px;
+    left: 50%;
+    object-fit: cover;
+  }
+  #pgraph{
+    padding-left: 10px;
+  }
+  #herocontainer{
+    left: 40%;
+    position: static;
+    padding-left:10px;
+  }
+
+  #bestsecuritydiv{
+    margin-left: 20px;
+  }
+  .bestSecurityHeader{
+    font-size: 50px;
+    font-weight: 700;
+  }
+  #divtwobestsecurity{
+    width: -webkit-fill-available;
+    height: auto;
+  }
+  #popup-17,#popup-1{
+    background-color: #171717 !important;
+  }
+  input{
+    color: #171717;
+  }
+  #popupbutton{
+    padding: 10px;
+    background: #2DD4BF;
+    border-radius: 20px;
+    border-color: #fff;
+    margin-left: 20px;
+  }
+
+}
